@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400;1,700&display=swap"
+		rel="stylesheet" />
+	<title>Calcularoda de imc</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="form-container">
+			<h2>Calculadora de imc</h2>
+			<form id="forms" action="">
+				<div class="form-input">
+					<div class="form-control">
+						<label for="height">Altura:</label>
+						<input type="text" name="height" id="height" placeholder="Ex: 1.70" />
+					</div>
+					<div class="form-control">
+						<label for="weight">Peso:</label>
+						<input type="text" name="weight" id="weight" placeholder="Ex: 50,5" />
+					</div>
+					<div class="action-btn">
+						<button id="imc-btn">Calcular</button>
+						<button id="clear-btn">Limpar</button>
+				
+				
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="result hide">
+			<p id="number-imc-result">Seu IMC: <span></span></p>
+			<p id="imc-info">Situação atual: <span></span></p>
+			<h3>Confira as classificações</h3>
+			<div id="table">
+		
+			</div>
+				<button id="back-btn" class="btn" type="submit" value="">
+					Voltar
+				</button>
+		    </div>
+	    </div>
+	</div>
+	<script type="module" src="./js/index.js"></script>
+</body>
+</html>

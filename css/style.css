@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeee;
+    background-color: #000;
+}
+input, button{
+    border:none;
+}
+#container{
+    min-width: 400px;
+    min-height: 400px;
+    border: .1rem solid #7c7c7c;
+    border-radius: .2rem;
+    background-color: #1e1e1e;
+    padding: 2rem;
+}
+#form-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .6rem;
+    color: #ccc;
+}
+.form-control input{
+    padding: .8rem .5rem;
+    border-radius: .2rem;
+}
+.action-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+button{
+    border-radius: .2rem;
+    padding: .8rem 1.5rem;
+    font-size: .95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a8a8a8;
+    background-color: #141421;
+    border:none;
+    cursor: pointer;
+    flex: 1;
+}
+button:hover{
+    color: #efefef
+}
+#clear-btn{
+    background-color: #000000;
+}
+.result{
+    text-align: center;
+    margin-bottom: .6rem;
+    display: flex;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+#imc-info{
+    font-size: 1.2rem;
+    color: #ccc;
+}
+#number-imc-result{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+.result h3{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    color: #dfdfdf;
+}
+#table{
+    margin: 1rem 0;
+    font-size: .8rem;
+}
+.table-header{
+    font-weight: bold;
+    color: #ccc;
+    font-size: .9rem;
+}
+.table-header,
+.table-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: .5rem;
+    gap: 3rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #444;
+}
+#back-btn{
+    align-self: center;
+}
+.bad{
+    color: #9e9106
+}
+.good{
+    color: #12db34;
+}
+.medium{
+    color: #8d4200;
+}
+.high{
+    color: #761c1c;
+}
